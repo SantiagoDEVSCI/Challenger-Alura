@@ -1,0 +1,37 @@
+<!DOCTYPE html>  
+<html lang="es">  
+    <head>  
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>Encriptador de Texto</title>  
+        <link rel="stylesheet" href="style.css">  
+        <link rel="icon" href="imag/iconto/icon.PNG" type="image/x-icon">  
+    </head>   
+<body>  
+    <header>  
+        <img src="./imag/logo.png" alt="Logo" class="logo">  
+    </header>  
+    <main class="main-container">  
+        <section class="input-section">  
+                <div class="button-container">  
+                    <button id="encryptBtn">Encriptar</button>  
+                    <button id="decryptBtn">Desencriptar</button>  
+            </div>  
+            <textarea id="inputText" placeholder="Ingrese el texto aquí" autofocus></textarea>  
+            <div class="info-message">  
+                <img src="./imag/!.svg" alt="advertencia" />  
+                Solo letras minúsculas y sin acentos  
+            </div> 
+        </section>  
+        <section class="output-section">  
+            <img id="character" class="character" src="./imag/face.webp" alt="Muñeco">  
+            <textarea id="outputText" placeholder="Ningún mensaje fue encontrado" readonly></textarea>  
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>  
+            <button id="copyBtn" class="hidden">Copiar</button>  
+        </section>  
+    </main>  
+    <footer>  
+        <p>Hecho por <a href="https://github.com/SantiagoDEVSCI/" target="_blank">SantiagoDEVSCI</a></p>  
+    </footer>  
+    <script src="app.js"></script>  
+</body>  
